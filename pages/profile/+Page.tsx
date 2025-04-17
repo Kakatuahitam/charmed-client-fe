@@ -63,8 +63,8 @@ export default function Page() {
             <ListItemText primary="Halaman Utama"></ListItemText>
           </ListItemButton>
         </ListItem>
-        <ListItem key="profile" disablePadding>
-          <ListItemButton href={`/profile`}>
+        <ListItem key="home" disablePadding>
+          <ListItemButton>
             <ListItemIcon><Person2Icon/></ListItemIcon>
             <ListItemText primary="Profil"></ListItemText>
           </ListItemButton>
@@ -156,9 +156,7 @@ export default function Page() {
       <Grid size={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin:2 }}>
         {isMobile && (
           <Stack>
-            <Typography variant="h5" component="h1" sx={{ mb: 2, textAlign: 'center'}}>Welcome to Charmed Scout App!</Typography>
-            <Typography variant="body1">Karena di sini masih kosong, cek halaman lain yaa. selamat dan semoga sehat selalu!</Typography>
-            <Typography variant="body1">Silahkan akses halaman lain lewat tombol menu <MenuIcon/> di kiri atas!</Typography>
+            <Typography variant="h5" component="h1" sx={{ mb: 2, textAlign: 'center'}}>Halaman Profil</Typography>
           </Stack>
         )}
       </Grid>
