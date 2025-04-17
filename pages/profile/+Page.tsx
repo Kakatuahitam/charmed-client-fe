@@ -4,7 +4,8 @@ import * as React from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 import AppBar from '@mui/material/AppBar';
-
+import Avatar from '@mui/material/Avatar';
+import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
@@ -58,8 +59,10 @@ export default function Page() {
       </Grid>
       <Grid size={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin:2 }}>
         {isMobile && (
-          <Stack>
-            <Typography variant="h5" component="h1" sx={{ mb: 2, textAlign: 'center'}}>This is Profile Page</Typography>
+          <Stack spacing={2} useFlexGap sx={{ display: 'flex', alignItems: 'center', width: '100%'}}>
+            <Avatar alt="Jayasingawarman" src="/assets/camp1.png" sx={{ width: 128, height: 128 }} />
+            <Typography variant="h6" component="h1" sx={{ textAlign: 'center'}}><strong>Yuda Kurnia Nurul Fikri</strong></Typography>
+            <Divider flexItem />
           </Stack>
         )}
       </Grid>
