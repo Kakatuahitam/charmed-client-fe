@@ -49,7 +49,7 @@ export default function LayoutDefault({ children }: { children: React.ReactNode 
       }}
     >
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
+      <Grid container>
         {children}
       </Grid>
     </Box>
